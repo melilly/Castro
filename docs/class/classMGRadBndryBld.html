@@ -1,100 +1,58 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Class MGRadBndryBld &mdash; Castro  documentation</title>
-  
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=2e394b92" />
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Class NGBndry" href="classNGBndry.html" />
     <link rel="prev" title="Class MGRadBndry" href="classMGRadBndry.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 
           
-            <a href="../index.html" class="icon icon-home"> Castro
           
-
-          
-            
-            <img src="../_static/castro_logo_hot_200.png" class="logo" alt="Logo"/>
-          
+          <a href="../index.html" class="icon icon-home">
+            Castro
+              <img src="../_static/castro_logo_hot_200.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
     <div class="branch">
         Branch: <a href="../class/classMGRadBndryBld.html">main</a> | <a href="../dev/class/classMGRadBndryBld.html">development</a>
     </div>
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Castro basics</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Castro basics</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Preface.html">Preface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction to Castro</a></li>
@@ -104,6 +62,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../mpi_plus_x.html">Running Options: CPUs and GPUs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../FlowChart.html">Flowchart</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gpu.html">GPU Programming Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../problem_setups.html">Distributed Problem Setups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../timestepping.html">Timestepping and Retries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../creating_a_problem.html">Setting Up Your Own Problem</a></li>
@@ -112,19 +71,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Castro reference</span></p>
+<p class="caption" role="heading"><span class="caption-text">Castro reference</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../build_system.html">Build System Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../debugging.html">Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Hydrodynamics.html">Hydrodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hse.html">Hydrostatic Equilibrium</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EOS.html">Equation of State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reactions.html">Reactions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mhd.html">MHD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gravity.html">Gravity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../diffusion.html">Diffusion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion.html">Thermal Diffusion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rotation.html">Rotation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sponge.html">Sponge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../radiation.html">Radiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Particles.html">Tracer particles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../EOSNetwork.html">Microphysics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdc.html">Spectral Deferred Corrections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../AMR.html">Adaptive Mesh Refinement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ConvertCheckpoint.html">Checkpoint Embiggener</a></li>
@@ -133,18 +94,25 @@
 <li class="toctree-l1"><a class="reference internal" href="../Verification.html">Verification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development Best Practices</a></li>
 </ul>
-<p class="caption"><span class="caption-text">API</span></p>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../filelist.html">File list</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../classlist.html">Class list</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="classCastro.html">Class Castro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classCoutRedirection.html">Class CoutRedirection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classDiffusion.html">Class Diffusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classGradPhiPhysBCFunct.html">Class GradPhiPhysBCFunct</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classGravity.html">Class Gravity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classHypreABec.html">Class HypreABec</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classHypreExtMultiABec.html">Class HypreExtMultiABec</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classMGRadBndry.html">Class MGRadBndry</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Class MGRadBndryBld</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Class MGRadBndryBld</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413MGRadBndryBld"><code class="docutils literal notranslate"><span class="pre">MGRadBndryBld</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE"><code class="docutils literal notranslate"><span class="pre">operator()()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="classNGBndry.html">Class NGBndry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classNGBndryBld.html">Class NGBndryBld</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classRadBndry.html">Class RadBndry</a></li>
@@ -154,141 +122,82 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">References</span></p>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../zreferences.html">References</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Castro</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../classlist.html">Class list</a> &raquo;</li>
-        
-      <li>Class MGRadBndryBld</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../classlist.html">Class list</a></li>
+      <li class="breadcrumb-item active">Class MGRadBndryBld</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/class/classMGRadBndryBld.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="class-mgradbndrybld">
-<h1>Class MGRadBndryBld<a class="headerlink" href="#class-mgradbndrybld" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="class-mgradbndrybld">
+<h1>Class MGRadBndryBld<a class="headerlink" href="#class-mgradbndrybld" title="Link to this heading"></a></h1>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv413MGRadBndryBld">
-<span id="_CPPv313MGRadBndryBld"></span><span id="_CPPv213MGRadBndryBld"></span><span id="MGRadBndryBld"></span><span class="target" id="classMGRadBndryBld"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MGRadBndryBld</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="classNGBndryBld.html#_CPPv410NGBndryBld" title="NGBndryBld"><span class="n"><span class="pre">NGBndryBld</span></span></a><a class="headerlink" href="#_CPPv413MGRadBndryBld" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv313MGRadBndryBld"></span><span id="_CPPv213MGRadBndryBld"></span><span id="MGRadBndryBld"></span><span class="target" id="classMGRadBndryBld"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MGRadBndryBld</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="classNGBndryBld.html#_CPPv410NGBndryBld" title="NGBndryBld"><span class="n"><span class="pre">NGBndryBld</span></span></a><a class="headerlink" href="#_CPPv413MGRadBndryBld" title="Link to this definition"></a><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE">
-<span id="_CPPv3NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE"></span><span id="_CPPv2NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE"></span><span id="MGRadBndryBld::call-operator__amrex::BoxArrayCR.amrex::DistributionMappingCR.i.amrex::GeometryCRC"></span><span class="target" id="classMGRadBndryBld_1a580d29d12af1c5108059a1b871cb0075"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classNGBndry.html#_CPPv47NGBndry" title="NGBndry"><span class="n"><span class="pre">NGBndry</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BoxArray</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_grids</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DistributionMapping</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_dmap</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_ngroups</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Geometry</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_geom</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE"></span><span id="_CPPv2NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE"></span><span id="MGRadBndryBld::call-operator__amrex::BoxArrayCR.amrex::DistributionMappingCR.i.amrex::GeometryCRC"></span><span class="target" id="classMGRadBndryBld_1ac2243dd6479be559b42b4e5fac8424c3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classNGBndry.html#_CPPv47NGBndry" title="NGBndry"><span class="n"><span class="pre">NGBndry</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BoxArray</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_grids</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">DistributionMapping</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_dmap</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">_ngroups</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../file/Castro__util_8H.html#_CPPv45amrex" title="amrex"><span class="n"><span class="pre">amrex</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Geometry</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">_geom</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK13MGRadBndryBldclERKN5amrex8BoxArrayERKN5amrex19DistributionMappingEiRKN5amrex8GeometryE" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 </div>
 </dd></dl>
 
-</div>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="classNGBndry.html" class="btn btn-neutral float-right" title="Class NGBndry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="classMGRadBndry.html" class="btn btn-neutral float-left" title="Class MGRadBndry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classNGBndry.html" class="btn btn-neutral float-right" title="Class NGBndry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2018-2020, Castro development tem.
-
-    </p>
+    <p>&#169; Copyright 2018-2024, Castro development team.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-    
+  </script>  
 
 
 </body>
